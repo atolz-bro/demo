@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-echo "Executing stop server"
+echo "Executing stop server!!"
 sudo pkill -f 'java -jar my-app.jar'
