@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-echo server start....
+echo "helooooooooooooooooooooooooooooooooo"
 cd /home/elijah/server
 sudo java -jar my-app.jar
