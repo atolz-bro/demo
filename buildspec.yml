@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: openjdk-17-jdk
+  build:
+    commands:
+      - echo Building the application...
+      - ./mvnw clean package
+artifacts:
+  files:
+    - target/my-app.jar
+

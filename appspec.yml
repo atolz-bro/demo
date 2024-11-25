@@ -1,0 +1,30 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/elijah/server
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: elijah
+    group: elijah
+
+hooks:
+  BeforeInstall:
+    - location: server_clear.sh
+      timeout: 300
+      runas: elijah
+  AfterInstall:
+    - location: fix_privileges.sh
+      timeout: 300
+      runas: elijah
+  ApplicationStart:
+    - location: server_start.sh
+      timeout: 20
+      runas: elijah
+  ApplicationStop:
+    - location: server_stop.sh
+      timeout: 20
+      runas: elijah
