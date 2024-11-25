@@ -5,12 +5,6 @@ files:
   - source: /
     destination: /home/elijah/server
 
-permissions:
-  - object: /
-    pattern: "**"
-    owner: elijah
-    group: elijah
-
 hooks:
   BeforeInstall:
     - location: server_clear.sh
