@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd /home/ubuntu/server
+cd /home/elijah/server
 sudo java -jar my-app.jar

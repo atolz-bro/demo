@@ -3,30 +3,30 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/server
+    destination: /home/elijah/server
 
 permissions:
   - object: /
     pattern: "**"
-    owner: ubuntu
-    group: ubuntu
+    owner: elijah
+    group: elijah
 
 hooks:
   BeforeInstall:
     - location: server_clear.sh
       timeout: 300
-      runas: ubuntu
+      runas: elijah
   AfterInstall:
     - location: fix_privileges.sh
       timeout: 300
-      runas: ubuntu
+      runas: elijah
 
   ApplicationStart:
     - location: server_start.sh
       timeout: 21
-      runas: ubuntu
+      runas: elijah
 
   ApplicationStop:
     - location: server_stop.sh
       timeout: 20
-      runas: ubuntu
+      runas: elijah
