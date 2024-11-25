@@ -8,19 +8,19 @@ import org.springframework.ldap.core.LdapTemplate;
 import org.springframework.ldap.core.support.BaseLdapPathContextSource;
 import org.springframework.ldap.core.support.LdapContextSource;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.Customizer;
+/*import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.ldap.LdapBindAuthenticationManagerFactory;
+import org.springframework.security.config.ldap.LdapBindAuthenticationManagerFactory;*/
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
-import org.springframework.security.web.SecurityFilterChain;
+/*import org.springframework.security.web.SecurityFilterChain;*/
 
 @Configuration
-@EnableWebSecurity
+//@EnableWebSecurity
 public class SecurityConfig {
-    @Bean
+/*    @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests((authorize) -> authorize
@@ -41,7 +41,7 @@ public class SecurityConfig {
                 .passwordCompare()
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
                 .passwordAttribute("description");
-    }
+    }*/
 
   /*@Bean
     public LdapTemplate ldapTemplate(){

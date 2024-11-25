@@ -50,4 +50,9 @@ public class UserController {
         model.addAttribute("message", "Registration successful for user: " + userForm.getUsername());
         return "success";
     }
+
+    @GetMapping("/cicddemo")
+    public String cicd(){
+        return "cicd";
+    }
 }
