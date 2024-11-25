@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-echo "server start"
+echo server start....
 cd /home/elijah/server
-sudo java -jar my-app.jar > /dev/null 2> /dev/null < /dev/null &
+sudo java -jar my-app.jar
