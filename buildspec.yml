@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk-17-jdk
+      java: openjdk-21
   build:
     commands:
       - echo Building the application...
