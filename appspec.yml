@@ -9,18 +9,17 @@ hooks:
   BeforeInstall:
     - location: server_clear.sh
       timeout: 300
-      runas: elijah
+
   AfterInstall:
     - location: fix_privileges.sh
       timeout: 300
-      runas: elijah
 
   ApplicationStart:
     - location: server_start.sh
       timeout: 21
-      runas: elijah
+
 
   ApplicationStop:
     - location: server_stop.sh
       timeout: 20
-      runas: elijah
+
