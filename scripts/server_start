@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 cd /home/elijah/server
 touch serverlog.txt
-sudo java -jar my-app.jar > serverlog.txt 2>&1
+sudo java -jar my-app.jar > serverlog.txt 2>&1 &
