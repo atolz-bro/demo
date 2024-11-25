@@ -8,28 +8,24 @@ files:
 permissions:
   - object: /
     pattern: "**"
-    owner: ubuntu
-    group: ubuntu
+    owner: root
+    group: root
 
 hooks:
   BeforeInstall:
     - location: server_clear.sh
       timeout: 300
-      runas: ubuntu
 
   AfterInstall:
     - location: fix_privileges.sh
       timeout: 300
-      runas: ubuntu
+
 
   ApplicationStart:
     - location: server_start.sh
       timeout: 21
-      runas: ubuntu
 
 
   ApplicationStop:
     - location: server_stop.sh
       timeout: 20
-      runas: ubuntu
-
