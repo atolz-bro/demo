@@ -20,7 +20,7 @@ hooks:
 
   ApplicationStart:
     - location: server_start.sh
-      timeout: 20
+      timeout: 21
 
   ApplicationStop:
     - location: server_stop.sh
