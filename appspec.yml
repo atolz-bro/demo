@@ -22,9 +22,10 @@ hooks:
       timeout: 300
 
 
+
   ApplicationStart:
     - location: server_start
-      timeout: 20
+      timeout: 21
 
 
   ApplicationStop:
