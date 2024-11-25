@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "helooooooooooooooooooooooooooooooooo"
+echo "helooooooooooooooooooooo"
 sudo mkdir servertest
 cd /home/elijah/server
 sudo java -jar my-app.jar
