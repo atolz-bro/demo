@@ -3,8 +3,12 @@ os: linux
 
 files:
   - source: /
-    destination: /home/elijah/server
-
+    destination: /home/ubuntu/server
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
 
 hooks:
   BeforeInstall:
